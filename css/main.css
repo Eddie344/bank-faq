@@ -66,8 +66,7 @@ p {
     position: absolute;
     max-height: 0;
     transform: translateY(-20px);
-    transition: all .6s ease;
-    transition-delay: .3s;
+    transition: all 1s ease;
 }
 .faq__items_show {
     opacity: 1;
