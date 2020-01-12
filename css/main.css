@@ -6,6 +6,9 @@
 body {
     overflow-x: hidden;
 }
+p {
+    margin: 0;
+}
 @font-face {
     font-family: PFHighwaySansPro-Medium;
     src: url(../fonts/PFHighwaySansPro-Medium.ttf);
@@ -62,7 +65,8 @@ body {
     visibility: hidden;
     position: absolute;
     max-height: 0;
-    transition: max-height 3s ease, opacity 1s ease;
+    transform: translateY(-20px);
+    transition: all .6s ease;
     transition-delay: .3s;
 }
 .faq__items_show {
@@ -70,6 +74,7 @@ body {
     visibility: visible;
     position: static;
     max-height: 2000px;
+    transform: translateY(0);
 }
 .faq__more_hide {
     opacity: 0;
